@@ -8,7 +8,6 @@ import 'package:chatapp/resources/chat_method.dart';
 import 'package:chatapp/screens/chatscreens/chat_screen.dart';
 import 'package:chatapp/screens/chatscreens/widgets/cached_image.dart';
 import 'package:chatapp/screens/pages/widgets/last_message_container.dart';
-import 'package:chatapp/screens/pages/widgets/online_dot_indicator.dart';
 import 'package:chatapp/widgets/custom_tile.dart';
 
 class ContactView extends StatelessWidget {
@@ -77,9 +76,6 @@ class ViewLayout extends StatelessWidget {
               contact.profilePhoto,
               radius: 80,
               isRound: true,
-            ),
-            OnlineDotIndicator(
-              uid: contact.uid,
             ),
           ],
         ),
